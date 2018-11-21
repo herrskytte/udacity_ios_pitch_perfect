@@ -54,6 +54,7 @@
                             <constraint firstItem="Czr-l7-8Qy" firstAttribute="centerX" secondItem="yPW-2S-RRH" secondAttribute="centerX" id="MZz-xq-3po"/>
                             <constraint firstItem="Czr-l7-8Qy" firstAttribute="top" secondItem="yPW-2S-RRH" secondAttribute="bottom" constant="8" id="OKY-tB-k5Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tLK-oF-RFP" secondAttribute="bottom" constant="16" id="akq-9O-DpC"/>
+                            <constraint firstItem="tLK-oF-RFP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eoo-JU-iUC"/>
                             <constraint firstItem="yPW-2S-RRH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fsP-4L-7tm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,6 +62,7 @@
                             <mask key="constraints">
                                 <exclude reference="6RJ-Pc-Flt"/>
                                 <exclude reference="AwA-lA-TA2"/>
+                                <exclude reference="eoo-JU-iUC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -69,6 +71,7 @@
                                 <exclude reference="akq-9O-DpC"/>
                                 <exclude reference="0nQ-UT-zrr"/>
                                 <include reference="AwA-lA-TA2"/>
+                                <include reference="eoo-JU-iUC"/>
                             </mask>
                         </variation>
                     </view>
@@ -170,14 +173,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wx6-Pg-NaF" firstAttribute="trailing" secondItem="Q4R-eM-9fG" secondAttribute="trailing" constant="16" id="27q-K2-ejm"/>
                             <constraint firstItem="Q4R-eM-9fG" firstAttribute="top" secondItem="N00-KX-X1i" secondAttribute="bottom" constant="8" id="2T5-0T-8xg"/>
+                            <constraint firstItem="N00-KX-X1i" firstAttribute="centerY" secondItem="wx6-Pg-NaF" secondAttribute="centerY" id="2fe-FS-wEz"/>
+                            <constraint firstItem="Q4R-eM-9fG" firstAttribute="leading" secondItem="N00-KX-X1i" secondAttribute="trailing" constant="204" id="85D-A0-MRK">
+                                <variation key="heightClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="N00-KX-X1i" firstAttribute="trailing" secondItem="Q4R-eM-9fG" secondAttribute="trailing" id="DZP-EK-xuM"/>
                             <constraint firstItem="N00-KX-X1i" firstAttribute="top" secondItem="wx6-Pg-NaF" secondAttribute="top" id="Dzt-6t-g7H"/>
                             <constraint firstItem="wx6-Pg-NaF" firstAttribute="trailing" secondItem="N00-KX-X1i" secondAttribute="trailing" constant="16" id="OJQ-Oh-yGR"/>
+                            <constraint firstItem="Q4R-eM-9fG" firstAttribute="centerY" secondItem="wx6-Pg-NaF" secondAttribute="centerY" id="l32-P2-EiK"/>
                             <constraint firstItem="Q4R-eM-9fG" firstAttribute="centerX" secondItem="wx6-Pg-NaF" secondAttribute="centerX" id="vJZ-5h-jGP"/>
                             <constraint firstItem="wx6-Pg-NaF" firstAttribute="bottom" secondItem="Q4R-eM-9fG" secondAttribute="bottom" constant="16" id="wJD-I0-Jwe"/>
                             <constraint firstItem="N00-KX-X1i" firstAttribute="leading" secondItem="wx6-Pg-NaF" secondAttribute="leading" constant="16" id="yam-Sr-U1o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wx6-Pg-NaF"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="27q-K2-ejm"/>
+                                <exclude reference="2fe-FS-wEz"/>
+                                <exclude reference="DZP-EK-xuM"/>
+                                <exclude reference="85D-A0-MRK"/>
+                                <exclude reference="l32-P2-EiK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="27q-K2-ejm"/>
+                                <exclude reference="OJQ-Oh-yGR"/>
+                                <exclude reference="wJD-I0-Jwe"/>
+                                <include reference="2fe-FS-wEz"/>
+                                <exclude reference="DZP-EK-xuM"/>
+                                <exclude reference="Dzt-6t-g7H"/>
+                                <exclude reference="2T5-0T-8xg"/>
+                                <include reference="85D-A0-MRK"/>
+                                <include reference="l32-P2-EiK"/>
+                                <exclude reference="vJZ-5h-jGP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Soundbar" id="diW-Sg-rwU">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Hd2-tP-uTJ"/>
